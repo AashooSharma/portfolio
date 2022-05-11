@@ -1,0 +1,25 @@
+*{
+  color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b2b;
+  
+}
+h1{
+  text-align: center;
+}
+h2{
+  color: #56bcff;
+  text-align: center;
+}
+.about{
+  
+  top: 10px;
+  left: 45%;
+  text-align: center;
+}
+p{
+  color: #ff6f1c;
+}
