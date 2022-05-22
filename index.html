@@ -44,6 +44,121 @@
         color: #ff6f1c;
       }
       </style>
+    <style type="text/css" media="all">
+       *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            border:none;
+            font-family: 'Poppins', sans-serif;
+          }
+
+          html{
+              font-size:62.5%;
+          }
+
+          .all{
+            width:100%;
+            min-height:100vh;
+            background-color: #020303;
+          }   
+
+          .all>h3{
+              position:absolute;
+              bottom:5%;
+              left:50%;
+              transform: translateX(-50%);
+
+              color:#fefefe;
+              font-size:2rem;
+              font-weight:100;
+              letter-spacing: 0.2rem;
+
+          }
+
+          .container{
+              min-height:100vh;
+              display:flex;
+              align-items: center;
+              justify-content: center;
+          }
+
+          
+          
+
+          .btn-1{
+              height:50px;
+              width:220px;
+            margin: 60px ;
+              
+              text-transform:uppercase;
+              letter-spacing: 0.2rem;
+              font-size:1.7rem;
+              font-weight:800;
+              font-style:italic;
+            line-height:20px;
+              cursor:pointer;
+              border:2px solid #fefefe;
+              background-color: #ffffff00;
+              color:#fefefe;
+
+              position:relative;
+
+              transition: .3s linear;
+            
+          }
+
+
+          .btn-1::before{
+              content:'';
+              position:absolute;
+              top:0;
+              right:8%;
+              transform: translateY(-50%) ;
+              background-color:#020303;
+              height:4px;
+              width:15px;
+              transition: .3s linear;
+              
+
+          }
+
+          .btn-1::after{
+              content:'';
+              position:absolute;
+              bottom:0;
+              left:8%;
+              transform: translateY(50%);
+              background-color:#020303;
+              height:4px;
+              width:15px;
+              transition: .3s linear;
+              
+          }
+
+          /* HOVER */
+
+          .btn-1:hover{
+              color:#ec1111;
+             
+              transform:scale(1.2);
+              box-shadow:0 0 35px #ec1111;
+          }
+
+
+          .btn-1:hover::before{
+              
+              right:86%;
+
+          }
+
+          .btn-1:hover::after{
+             
+              left:86%;
+          }
+
+    </style>
+
 </head>
 <body>
     <h1>Welcome</h1>
@@ -54,9 +169,17 @@
       </p>
       
     </div>
-<div class="cont1">
-      <a class="bt" href="./home.html">Explore Me</a>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<div class="all">
+        <div class="container">
+            <a class="btn-1">Explore Me</a>
+        </div>
+        
     </div>
+  
     <meta http-equiv="refresh" content="10; url=./home.html">
 </body>
 </html>
