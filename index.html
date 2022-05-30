@@ -18,9 +18,22 @@
     <link rel="shortcut icon" href="https://media.discordapp.net/attachments/807677109547696140/925662167896850452/Ashacker_copy_500x500.jpg" type="image/x-icon" />
 
     <style>
+    @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+
     *{
         color: white;
       }
+      a{
+        text-decoration: none;
+        text-align: center;
+      }
+      i{
+        padding: 50px;
+        
+      }
+      
       body {
         margin: 0;
         padding: 0;
@@ -83,7 +96,13 @@
               justify-content: center;
           }
 
-          
+          .container2{
+              min-height:5vh;
+              display:flex;
+              align-items: center;
+              justify-content: center;
+          }
+
           
 
           .btn-1{
@@ -156,6 +175,20 @@
              
               left:86%;
           }
+          .btn-shadom-1:hover{
+            color: #fd931f;
+            box-shadow:0 0 35px #fd931f;
+          }
+          .btn-shadom-2:hover{
+            color: #1174ec;
+            box-shadow:0 0 35px #1174ec;
+          }
+          .btn-shadom-3:hover{
+            color: #ec1111;
+            box-shadow:0 0 35px #ec1111;
+          }
+         
+          
 .myheadline{
   font-size: 20px;
 }
@@ -202,67 +235,7 @@
 }
     </style>
 
-  <style type="text/css" media="all">
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
-    .social-bt {
-      /*display: flex;*/
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-align: center;
-      width: 300px;
-      min-height: 10vh;
-      background-color: #020303;
-
-    }
-    .social-bt div {
-      text-align: center;
-      padding: 10px 40px 10px 40px;
-      margin-top: 10px;
-      max-width: 150px;
-      border-radius: 10px;
-      margin: 30px;
-      letter-spacing: 2px;
-
-    }
-    .bt-1 {
-      background: #2c7dd4;
-    }
-    .bt-2 {
-      background: #c02929;
-    }
-    .span {
-      visibility: none;
-      background:;
-    }
-    i {
-
-      padding: 5px;
-      background: #27292a;
-      margin: 5px;
-      border-radius: 3px;
-
-    }
-    a {
-      text-decoration: none;
-      color: #fff;
-    }
-    .bt-1:hover {
-      box-shadow: 0 0 35px #1174ec;
-
-    }
-    .bt-2:hover {
-      box-shadow: 0 0 35px #ec1111;
-    }
-    .bt-1 a i:hover {
-      color: #1174ec;
-    }
-    .bt-2 a i:hover {
-      color: #ec1111;
-    }
-
-  </style>
 
 </head>
 <body>
@@ -295,20 +268,22 @@
       </p>
       </div>
     </div>
-  <div class="social-bt">
-    <div class="bt-1">
-      <a class="linkedin" href="https://www.linkedin.com/in/aashoo-sharma-60b502203"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
-    </div>
-    <div class="bt-2">
-      <a class="youtube" href="https://youtube.com/channel/UCx5DNecpARSa6PSJ_u_xvKw"><i class="fa fa-youtube-play" aria-hidden="true"></i><span>YouTube</span></a>
-    </div>
-  </div>
+    
+
+  <div class="container2">
+            <a href="https://youtube.com/channel/UCx5DNecpARSa6PSJ_u_xvKw" class="btn-1 btn-shadom-3">
+              YouTube</a>
+            </div>
+  <div class="container2">
+            <a href="https://www.linkedin.com/in/aashoo-sharma-60b502203" class="btn-1 btn-shadom-2">
+              LinkedIn</a>
+        </div>
 
     <form action="./home.html" method="get" accept-charset="utf-8">
       
     
         <div class="container">
-            <button class="btn-1">Explore Me</button>
+            <button class="btn-1 btn-shadom-1">Explore Me</button>
         </div>
     </form>
     </div>
