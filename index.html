@@ -90,7 +90,7 @@
           }
 
           .container{
-              min-height:40vh;
+              min-height:3vh;
               display:flex;
               align-items: center;
               justify-content: center;
@@ -187,7 +187,10 @@
             color: #ec1111;
             box-shadow:0 0 35px #ec1111;
           }
-         
+         .btn-shadom-4:hover{
+            color: #f22877;
+            box-shadow:0 0 35px #f22877;
+          }
           
 .myheadline{
   font-size: 20px;
@@ -235,7 +238,187 @@
 }
     </style>
 
+  <style type="text/css" media="all">
+      body{
+  background:#1a293e;
+  
+  
+}
+.container{
+  display: flex;
+   flex-direction: row;
+}
+.container div:first-child(1){
+  background-color:#ccffcc;
+	flex: 1;
+  height:100px;
+  width:100px;
+	text-align: center;
+  
+  
+}
+.first {
+  -webkit-flex: 1;
+          flex: 1;
+  
+}
+.second {
+  -webkit-flex: 2;
+          flex: 2;
+ 
+}
+.third {
+  -webkit-flex: 1;
+          flex: 1;
+}
 
+
+
+
+
+
+#loader-wrapper{
+    position: fixed;
+    top: 40px;
+    left:24vh;
+    width: 300px;
+    height: 300px;
+   margin-left:30px;
+   margin-top: 5vh;
+}
+#loader {
+    display: block;
+    position: relative;
+    /*left: 50%;*/
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    margin: -175px 0 0 -175px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #4db8ff;
+  border-bottom-color: #b3e0ff;
+  border-right-color: #66c2ff;
+  border-left-color: #80ccff;
+  box-shadow: 0 0 15px #2187e7;
+ 
+    -webkit-animation: spin 30s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 30s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+#loader1:before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    right: 70px;
+    bottom: 70px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-color: #4398ba;
+ 
+    border-style:dotted;
+  
+    -webkit-animation: spin 18s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 18s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader1:after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    right: 55px;
+    bottom: 55px;
+    border-radius: 50%;
+    border-color: #59c1eb;
+   border-width:5px;	
+    border-style:double dashed solid dotted ;
+  box-shadow: 0 0 40px #2187e7;
+    -webkit-animation: spin 60s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 60s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+ 
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-color: #1d5ca9;
+ 
+    border-style:dotted;
+  
+    -webkit-animation: spin 18s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 18s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-color: #429bc0;
+   border-width:5px;	
+    border-style:dotted solid;
+    -webkit-animation: spin 60s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 60s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+.myphoto{
+  width: 145px;
+  height: 145px;
+  margin-left: -97px;
+  margin-top: -73px;
+  box-shadow: 0 0 30px #56ff74;
+}
+.bigbox{
+  position: relative;
+  margin-top: 50vh;
+}
+    </style>
 
 </head>
 <body>
@@ -249,8 +432,17 @@
     
   
   <h1>Welcome</h1>
-  <div class="myphoto">
-    <img src="1653255903681.png" alt="Aashoo Sharma Portfolio" ></div>
+  <!--<div class="myphoto">
+    <img src="1653255903681.png" alt="Aashoo Sharma Portfolio" ></div>-->
+    <div id="loader-wrapper">
+            <div id="loader"><div id="loader1"> 
+              </div> 
+              </div>
+               <img class="myphoto" src="1653255903681.png" alt="Aashoo Sharma" />
+        <!--<p><a  onclick="lFunction()">ON</a><a onclick="rFunction()">/OFF</a></p>-->
+       
+</div>
+<div class="bigbox">
   
 
     <h2>I'm Aashoo Sharma</h2>
@@ -278,7 +470,10 @@
             <a href="https://www.linkedin.com/in/aashoo-sharma-60b502203" class="btn-1 btn-shadom-2">
               LinkedIn</a>
         </div>
-
+  <div class="container2">
+            <a href="https://www.instagram.com/as__hacker/" class="btn-1 btn-shadom-4">
+              Instagram</a>
+        </div>
     <form action="./home.html" method="get" accept-charset="utf-8">
       
     
@@ -287,7 +482,7 @@
         </div>
     </form>
     </div>
-  
+  </div>
     <!--<meta http-equiv="refresh" content="10; url=./home.html">-->
 </body>
 </html>
